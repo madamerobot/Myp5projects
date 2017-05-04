@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Oh Yeah</title>
+<h1 class = 'header'>POP THEM</h1>
+
+<style>
+
+.counter{
+font-size: 50px;
+font-family: 'Verdana';
+font-weight: bold;
+text-align: center;
+border-style: dashed;
+border-width: medium;;
+}
+
+.balloon {
+position: absolute;
+margin: 30px;
+bottom: 0;
+}
+
+.header {
+font-family: 'Arial Black';
+color: #e8a2de;
+text-align: center;
+}
+
+body {
+background: -webkit-linear-gradient(bottom right,rgb(106,219,237),rgb(85,166,178));
+height: 100%;
+}
+
+.custom {
+   cursor: url(images/cursor.png), auto;
+}
+
+.inflatable {
+width: 200px;
+height: 200px;
+background-color: #ed966a;
+border-radius: 50%;
+}
+
+.string {
+width: 5px;
+height: 100px;
+background-color: #000000;
+margin-left: 90px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="counter">
+0
+</div>
+
+<div class="custom">
+</div>
+
+<div class="balloon">
+ <div class="inflatable"></div>
+ <div class="string"></div>
+ </div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script>
+var balloon = $(".balloon");
+var counter = 0;
+var colors = ["#93b255", "#55b27a","#b255b0", "#5579b2", "#e5b5dd"]
+
+function start(){
+for(var i=0; i<10; i++){
+  var balloon_color
+  var balloonCopy = balloon.clone();
+  balloonCopy.css({
+  left: i * 200
+  });
+
+  balloonCopy.appendTo("body");
+
+  inflatable = balloonCopy.find(".inflatable")
+
+  balloon_color = colors[Math.floor(Math.random() * colors.length)];
+
+  inflatable.css({
+    "background-color" : balloon_color
+    });
+
+  balloonCopy.click(function(){
+    pop_sound.play();
+    $(this).remove();
+    counter = counter+1;
+    $(".counter").html(counter);
+  });
+
+  balloonCopy.animate({ bottom: "100%"}, 8000);
+  }
+balloon.remove();
+  }
+
+  function preloadPopSound(){
+    var audio = new Audio('baloon-pop.mp3')
+    audio.preload = 'auto';
+    $(audio).on("loadeddata",start);
+    return audio;
+  }
+
+  var pop_sound = preloadPopSound();
+
+</script>
+
+</html>
