@@ -4,7 +4,7 @@
 Using the original metaphor of a software sketchbook, p5 has a full set of drawing functionality (such as creating shapes and frame-rate based animations). You can find more information at https://p5js.org/.
 
 <h1>About:</h1>
-<p>This repository features some of my p5 sketches. They are ranging from small-scope effor (e.g. 'wool') to bigger scope effort (e.g. luncherizer') and have been created in my spare time for fun.<br>
+<p>This repository features some of my p5 sketches. They are ranging from small-scope effort (e.g. 'wool') to bigger scope effort (e.g. luncherizer') and have been created in my spare time for fun.<br>
 
 <h1>Screenshots:</h1>
 
