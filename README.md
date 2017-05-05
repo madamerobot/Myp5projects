@@ -8,14 +8,12 @@ Using the original metaphor of a software sketchbook, p5 has a full set of drawi
 
 <h1>Screenshots:</h1>
 
-![Wool](/screenshots/wool.png?raw=true "Wool")
-
 ![Luncherizer](/screenshots/luncherizer.png?raw=true "Luncherizer")
 
 ![HipHip](/screenshots/hiphip.png?raw=true "HipHip")
 
 <h1>Credits:</h1>
-<p>Daniel Shiffman, who is the most awesom YouTube mentor one can ask for. Check out his channel at https://www.youtube.com/user/shiffman<br>
+<p>Daniel Shiffman, who is the most awesome YouTube mentor one can ask for. Check out his channel at https://www.youtube.com/user/shiffman<br>
 </p>
 
 <h1>Author</h1>
