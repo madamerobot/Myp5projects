@@ -24,18 +24,13 @@ function setup() {
     popup[k] = new Popup();
   }
 
-  for (var o = 0; o < 3; o++) {
-    plates[o] = new Plates(o*100+50,10);
-    plates[o] = new Plates(10,100*o+50);
-  }
-
   for (var i = 0; i < 1000; i++) {
     drops[i] = new Drop();
   }
 }
 
 function draw() {
-  background(200);
+  background(bg);
   print(counter);
   
   for (var o = 0; o < plates.length; o++) {
