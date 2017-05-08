@@ -17,6 +17,5 @@ function Lemon(x, y) {
     this.y = this.y +1;
     this.w = this.w + 0.5;
     this.h = this.h + 0.5;
-    fill('#bac130');
   }
 }
